@@ -7,7 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { DestinationsComponent } from './destinations/destinations.component';
 import { CrewComponent } from './crew/crew.component';
 import { TechnologyComponent } from './technology/technology.component';
-
+import {CarouselModule} from '@coreui/angular'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,8 @@ import { TechnologyComponent } from './technology/technology.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
