@@ -1,12 +1,8 @@
-<nav>
-  <a routerLink="/home">HOME</a>
-</nav>
-<nav>
-  <a routerLink="/destination">DESTINATION</a>
-</nav>
-<nav>
-  <a routerLink="/crew">CREW</a>
-</nav>
-<nav>
-  <a routerLink="/technology">TECHNOLOGY</a>
-</nav>
+<c-navbar class="bg-light" colorScheme="light" expand="lg">
+        <c-navbar-nav class="me-auto mb-2 mb-lg-0">
+          <a cNavLink routerLink="./">HOME</a>
+          <a cNavLink routerLink="./destination" >DESTINATION</a>
+          <a cNavLink routerLink="./crew">CREW</a>
+          <a cNavLink routerLink="./technology">TECHNOLOGY</a>
+        </c-navbar-nav>
+</c-navbar>

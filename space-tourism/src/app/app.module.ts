@@ -4,17 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { DestinationsComponent } from './destinations/destinations.component';
+import { DestinationComponent } from './destination/destination.component';
 import { CrewComponent } from './crew/crew.component';
 import { TechnologyComponent } from './technology/technology.component';
 import {CarouselModule} from '@coreui/angular'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NavigationComponent } from './navigation/navigation.component';
+import { NavModule } from '@coreui/angular';
+import { NavbarModule } from '@coreui/angular';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    DestinationsComponent,
+    DestinationComponent,
     CrewComponent,
     TechnologyComponent,
     NavigationComponent
@@ -23,7 +25,10 @@ import { NavigationComponent } from './navigation/navigation.component';
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule, 
+    NavModule,
+    NavbarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
