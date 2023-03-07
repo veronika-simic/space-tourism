@@ -1,0 +1,30 @@
+c-navbar {
+  display: flex; 
+  justify-content: flex-end;
+  margin-top: 3.5rem;
+}
+c-navbar > span {
+    align-self: center;
+    background-color: black;
+    height: 0.25rem;
+    width: 30%;
+   
+}
+
+c-navbar-nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 0;
+  width: 60%;
+}
+
+c-navbar-nav > a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+c-navbar-nav > a > span {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
