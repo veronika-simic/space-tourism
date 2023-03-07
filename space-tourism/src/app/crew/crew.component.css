@@ -1,20 +1,10 @@
-.container {
+.crew {
   align-items: center;
   background-image: url("../../assets/crew/background-crew-desktop.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: var(--main-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;
 }
 
 h2 {
@@ -51,10 +41,7 @@ c-carousel-item {
 }
 
 p {
-  color: var(--third-color);
-  font-size: 2rem;
   margin-top: 3rem;
-
 }
 
 
