@@ -1,11 +1,15 @@
-<c-carousel [interval]="0">
+<div class="container">
+  <h2>{{title}}</h2>
+  <c-carousel [interval]="0">
     <c-carousel-inner>
       <c-carousel-item *ngFor="let crewMember of crewMembers">
         <div class="crew-info">
           <h3>{{ crewMember.role | uppercase }}</h3>
           <h3>{{ crewMember.name | uppercase }}</h3>
           <p>{{ crewMember.bio }}</p>
+          <c-carousel-indicators></c-carousel-indicators>
         </div>
+       
         <div class="image-container">
           <img
             [src]="crewMember.images[0]"
@@ -13,8 +17,9 @@
             class="d-block w-100"
           />
         </div>
+       
       </c-carousel-item>
+     
     </c-carousel-inner>
-    <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
-    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
-</c-carousel>
+  </c-carousel>
+</div>
