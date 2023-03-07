@@ -7,5 +7,6 @@ import { CREW } from './mock-crew';
   styleUrls: ['./crew.component.css'],
 })
 export class CrewComponent {
+  title = '02 MEET YOUR CREW';
   crewMembers = CREW;
 }

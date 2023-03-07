@@ -1,12 +1,21 @@
-<c-carousel [interval]="0">
+<div class="container">
+  <h2><span style="color: var(--secondary-color);">{{title.slice(0,2)}}</span>{{title.slice(2)}}</h2>
+  <c-carousel [interval]="0">
     <c-carousel-inner>
-        <c-carousel-item *ngFor="let crewMember of crewMembers">
-            <p>{{crewMember.role | uppercase}}</p>
-            <p>{{crewMember.name | uppercase}}</p>
-            <p>{{crewMember.bio}}</p>
-            <img [src]="crewMember.images[0]" alt="{{crewMember.name}} image" class="d-block w-100"/>
-        </c-carousel-item>
+      <c-carousel-item *ngFor="let crewMember of crewMembers">
+        <div class="crew-info">
+          <h3 id="role">{{ crewMember.role | uppercase }}</h3>
+          <h3 id="name">{{ crewMember.name | uppercase }}</h3>
+          <p>{{ crewMember.bio }}</p>
+          <c-carousel-indicators></c-carousel-indicators>
+        </div>
+        <div class="image-container">
+          <img
+            [src]="crewMember.images[0]"
+            alt="{{ crewMember.name }} image"
+          />
+        </div>
+      </c-carousel-item>
     </c-carousel-inner>
-    <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
-    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
-</c-carousel>
+  </c-carousel>
+</div>
