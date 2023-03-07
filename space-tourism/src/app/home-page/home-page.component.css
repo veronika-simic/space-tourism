@@ -1,3 +1,10 @@
 .home {
+    align-items: center;
     background-image: url(../../assets/home/background-home-desktop.jpg);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+    width: 50%;
 }
