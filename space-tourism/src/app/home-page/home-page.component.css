@@ -1,8 +1,9 @@
 .home {
     align-items: center;
-    background-image: url(../../assets/home/background-home-desktop.jpg);
+    background-image: url('../../assets/home/background-home-desktop.jpg');
     display: flex;
     justify-content: space-evenly;
+    padding-top: 6rem;
 }
 
 main {
@@ -25,7 +26,7 @@ main > h2 {
 
 main > p {
     font-size: 1.25rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
 }
 
 .explore {
@@ -34,4 +35,17 @@ main > p {
     color: black;
     height: 30%;
     width: 15%;
+}
+
+
+@media  screen and (max-width: 768px) {
+    .home {
+        background-image: url('../../assets/home/background-home-mobile.jpg');
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+        background-image: url('../../assets/home/background-home-tablet.jpg');
+    }
 }
