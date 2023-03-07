@@ -1,5 +1,5 @@
 <div class="container">
-  <h2><span style="color: var(--secondary-color);">{{title.slice(0,2)}}</span>{{title.slice(2)}}</h2>
+  <h2><span style="color: var(--secondary-color); font-weight: bold;">{{title.slice(0,2)}}</span>{{title.slice(2)}}</h2>
   <c-carousel [interval]="0">
     <c-carousel-inner>
       <c-carousel-item *ngFor="let crewMember of crewMembers">

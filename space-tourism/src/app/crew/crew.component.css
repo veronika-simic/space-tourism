@@ -26,7 +26,8 @@ h2 {
   width: 80%;
 }
 
-c-carousel {
+c-carousel-inner {
+  height: 100%;
 }
 
 c-carousel-item {
@@ -54,7 +55,4 @@ p {
   font-size: 2rem;
   margin-top: 3rem;
 
-}
-
- c-carousel-indicators {
 }
