@@ -9,13 +9,15 @@ import { CrewComponent } from './crew/crew.component';
 import { TechnologyComponent } from './technology/technology.component';
 import {CarouselModule} from '@coreui/angular'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NavigationComponent } from './navigation/navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     DestinationsComponent,
     CrewComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
