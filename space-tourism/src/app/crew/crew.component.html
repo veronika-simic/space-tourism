@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>{{title}}</h2>
+  <h2><span style="color: var(--secondary-color);">{{title.slice(0,2)}}</span>{{title.slice(2)}}</h2>
   <c-carousel [interval]="0">
     <c-carousel-inner>
       <c-carousel-item *ngFor="let crewMember of crewMembers">
@@ -13,12 +13,9 @@
           <img
             [src]="crewMember.images[0]"
             alt="{{ crewMember.name }} image"
-            class="d-block w-100"
           />
         </div>
-       
       </c-carousel-item>
-     
     </c-carousel-inner>
   </c-carousel>
 </div>
