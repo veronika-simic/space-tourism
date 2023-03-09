@@ -3,18 +3,15 @@ c-navbar {
   font-family: 'Golos Text', sans-serif;
   justify-content: flex-end;
   margin-top: 3.5rem;
-  position: relative;
-  z-index: 10;
+  z-index: 20;
 }
-c-navbar > span {
+/* c-navbar > span {
     align-self: center;
     background-color: var(--main-color);
     height: 0.1rem;
     margin-right: 55%;
-    position: absolute;
     width: 40%;
-    z-index: 20;
-}
+} */
 
 c-navbar-nav {
   background-color: black;
