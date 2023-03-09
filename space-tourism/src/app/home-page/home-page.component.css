@@ -1,56 +1,79 @@
 .home {
-    align-items: center;
-    background-image: url('../../assets/home/background-home-desktop.jpg');
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 6rem;
+  display: flex;
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.left {
+  flex: 1 1 0;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
 }
 
-main {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
+.left > h1 {
+  font-family: "Tilt Neon", cursive;
+  font-size: 9rem;
+  letter-spacing: 0.25rem;
+}
+.left > h2 {
+  color: var(--secondary-color);
+  font-size: 2rem;
 }
 
-main > h1 {
-    font-family: 'Tilt Neon', cursive;
-    font-size: 10rem;
-    letter-spacing: 0.25rem;
+.left > p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  width: 65%;
 }
 
- h2 {
-    color: var(--secondary-color);
-    font-size: 2rem;
+.right {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 0;
 }
 
-main > p {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+.circle {
+  width: 10%;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 6rem;
+}
+.right > .circle > h2 {
+  color: black;
+  font-size: 2rem;
 }
 
-.explore {
-    align-items: center;
-    background-color: var(--main-color);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    height: 30%;
-    width: 15%;
-}
-
-.explore > h2 {
-    color: black
-}
-
-@media  screen and (max-width: 768px) {
-    .home {
-        background-image: url('../../assets/home/background-home-mobile.jpg');
-    }
+@media screen and (max-width: 768px) {
+  .home {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .home {
-        background-image: url('../../assets/home/background-home-tablet.jpg');
-    }
+  .home {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+  .content {
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+
+  .left {
+    align-items: center;
+  }
+
+  .left > h2 {
+    font-size: 1.5rem;
+  }
 }
