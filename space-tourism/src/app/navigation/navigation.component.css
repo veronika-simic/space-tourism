@@ -1,34 +1,39 @@
 c-navbar {
-  display: flex; 
-  font-family: 'Golos Text', sans-serif;
+  align-items: center;
+  column-gap: 2rem;
+  display: flex;
+  font-family: "Golos Text", sans-serif;
   justify-content: flex-end;
+  height: 5rem;
   margin-top: 3.5rem;
-  z-index: 20;
+  opacity: 0.75;
+  position: absolute;
+  right: 0;
+  width: 85%;
 }
-/* c-navbar > span {
-    align-self: center;
-    background-color: var(--main-color);
-    height: 0.1rem;
-    margin-right: 55%;
-    width: 40%;
-} */
+
+.hr-line {
+  height: 2px;
+  background-color: var(--main-color);
+  align-self: center;
+  left: 0;
+  width: 40%;
+  position: absolute;
+}
 
 c-navbar-nav {
-  background-color: black;
+  align-self: stretch;
+ 
   display: flex;
-  justify-content: space-evenly;
-  padding: 3rem 0;
-  width: 60%;
+  justify-content: flex-end;
+  column-gap: 2rem;
+  padding-right: 2rem;
+  width: 70%;
 }
 
 c-navbar-nav > a {
+  align-self: center;
   color: var(--main-color);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   text-decoration: none;
-}
-
-c-navbar-nav > a > span {
-  color: var(--secondary-color);
-  font-weight: bold;
-  margin-right: 0.5rem;
 }
