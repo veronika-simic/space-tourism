@@ -22,6 +22,7 @@ p {
   bottom: 0;
   right: 0;
   overflow: auto;
+  z-index: -1;
 }
 html,
 body,
