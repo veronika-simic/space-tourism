@@ -1,21 +1,24 @@
 .home {
-  display: flex;
-  background-image: url("../../assets/home/background-home-desktop.jpg");
-  justify-content: center;
   align-items: center;
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  display: flex;
+  justify-content: center;
+  
 }
 .content {
+  column-gap: 2rem;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  margin-top: 6rem;
   width: 70%;
 }
 .left {
-  flex: 1 1 0;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   row-gap: 1rem;
+  width: 50%;
 }
 
 .left > h1 {
@@ -38,7 +41,6 @@
   align-items: flex-end;
   display: flex;
   justify-content: center;
-  flex: 1 1 0;
 }
 
 .circle {
@@ -67,14 +69,20 @@
   }
   .content {
     flex-direction: column;
+    margin-top: 8rem;
     row-gap: 5rem;
   }
 
   .left {
     align-items: center;
+    width: 100%;
   }
 
   .left > h2 {
     font-size: 1.5rem;
+  }
+
+  .left > p {
+    width: 100%;
   }
 }
