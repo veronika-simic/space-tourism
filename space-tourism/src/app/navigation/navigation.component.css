@@ -6,7 +6,6 @@ c-navbar {
   justify-content: flex-end;
   height: 5rem;
   margin-top: 3.5rem;
-  opacity: 0.75;
   position: absolute;
   right: 0;
   width: 85%;
@@ -23,17 +22,39 @@ c-navbar {
 
 c-navbar-nav {
   align-self: stretch;
- 
   display: flex;
   justify-content: flex-end;
-  column-gap: 2rem;
-  padding-right: 2rem;
+  column-gap: 1.75rem;
+  padding-right: 6rem;
   width: 70%;
 }
 
 c-navbar-nav > a {
   align-self: center;
   color: var(--main-color);
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-decoration: none;
+}
+
+c-navbar-nav > a > span {
+ color: var(--secondary-color);
+}
+
+
+@media  screen and (max-width: 1025px) {
+  c-navbar {
+    margin-top: 0;
+  }
+  .hr-line {
+    display: none;
+  }
+
+  c-navbar-nav {
+    column-gap: 0.75rem;
+    width:90%;
+  }
+
+  c-navbar-nav > a > span {
+    display: none;
+   }
 }
