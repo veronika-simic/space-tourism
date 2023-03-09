@@ -1,23 +1,19 @@
 .crew {
-  align-items: center;
+  align-items: flex-start;
   background-image: url("../../assets/crew/background-crew-desktop.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 auto;
+  
 }
 
 h2 {
-  display: flex;
-  flex-direction: row;
   font-size: 2.5rem;
-  justify-content: flex-start;
-  column-gap: 1rem;
-  width: 80%;
+  margin-top: 15rem;
 }
 
-c-carousel-inner {
-  height: 100%;
+c-carousel {
+ overflow: hidden;
 }
 
 c-carousel-item {
@@ -42,6 +38,10 @@ c-carousel-item {
 
 p {
   margin-top: 3rem;
+  width: 75%;
+  font-size: 1.25rem;
+  line-height: 2rem;
+
 }
 
 

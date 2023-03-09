@@ -3,13 +3,11 @@
   background-image: url("../../assets/home/background-home-desktop.jpg");
   display: flex;
   justify-content: center;
-  
 }
 .content {
   column-gap: 2rem;
   display: flex;
-  justify-content: center;
-  margin-top: 6rem;
+  justify-content: space-evenly;
   width: 70%;
 }
 .left {
