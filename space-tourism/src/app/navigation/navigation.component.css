@@ -1,19 +1,17 @@
 c-navbar {
   display: flex; 
+  font-family: 'Golos Text', sans-serif;
   justify-content: flex-end;
   margin-top: 3.5rem;
-  position: relative;
-  z-index: 10;
+  z-index: 20;
 }
-c-navbar > span {
+/* c-navbar > span {
     align-self: center;
     background-color: var(--main-color);
     height: 0.1rem;
     margin-right: 55%;
-    position: absolute;
     width: 40%;
-    z-index: 20;
-}
+} */
 
 c-navbar-nav {
   background-color: black;
@@ -25,10 +23,12 @@ c-navbar-nav {
 
 c-navbar-nav > a {
   color: var(--main-color);
+  font-size: 1.25rem;
   text-decoration: none;
 }
 
 c-navbar-nav > a > span {
+  color: var(--secondary-color);
   font-weight: bold;
   margin-right: 0.5rem;
 }
